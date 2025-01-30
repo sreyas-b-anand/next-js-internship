@@ -9,12 +9,12 @@ const Explore = () => {
         className=" rounded-[15px] bg-white h-[300px] w-80 p-5 flex items-center  gap-3 justify-between flex-col"
       >
         <div className="w-full flex items-center justify-end ">
-          <div className="p-3 rounded-full border ">
+          <div className="p-3 rounded-full border hover:cursor-pointer">
             <ArrowRight />
           </div>
         </div>
         <div>
-          <p className="border-b font-medium text-xl py-8 px-2">
+          <p className="border-b font-normal text-xl py-8 px-2">
             Explore our curated list of must vist destinations around the globe
           </p>
           <div className="flex items-center justify-between p-4">

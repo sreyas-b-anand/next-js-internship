@@ -7,7 +7,7 @@ export default function LanguageToggle() {
   return (
     <div
       onClick={() => setIsEnglish(!isEnglish)}
-      className="relative w-16 h-8 bg-gray-300 rounded-full flex items-center cursor-pointer p-1 transition-all duration-300"
+      className="relative w-16 h-8 bg-gray-300 rounded-full hidden sm:flex items-center cursor-pointer p-1 transition-all duration-300"
     >
       {/* EN / IN Text inside the switch */}
       <span

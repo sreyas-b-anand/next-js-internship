@@ -11,15 +11,13 @@ export const useFetch = () => {
                 // Fetch current time in London from WorldTimeAPI
                 const response = await fetch('http://worldtimeapi.org/api/timezone/Europe/London.json');
                 
-                // Check if the response is ok
                 if (!response.ok) {
                     throw new Error('Failed to fetch time');
                 }
                 
-                // Parse the JSON response
                 const data = await response.json();
                 
-                // Get the current time in London
+                
                 const currentTime = new Date(data.datetime); // The datetime is in ISO 8601 format
                 const time = currentTime.toISOString();
                 console.log('Current Time in London:', time);
